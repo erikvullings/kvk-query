@@ -1,0 +1,49 @@
+{
+  "name": "kvk-query",
+  "version": "0.1.0",
+  "description": "CLI to query the Netherlands Chamber of Commerce (KvK - Kamer van Koophandel).",
+  "main": "./dist/cli.js",
+  "types": "./dist/cli.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TNOCS/kvk-query.git"
+  },
+  "keywords": [
+    "KVK",
+    "query",
+    "CSV"
+  ],
+  "bin": {
+    "kvk-query": "./bin/run.js"
+  },
+  "scripts": {
+    "start": "tsc -w",
+    "clean": "rimraf ./dist",
+    "build": "npm run clean && tsc",
+    "dry-run": "npm publish --dry-run",
+    "patch-release": "npm version patch && npm publish && git push --follow-tags",
+    "minor-release": "npm version minor && npm publish && git push --follow-tags",
+    "major-release": "npm version major && npm publish && git push --follow-tags"
+  },
+  "author": {
+    "name": "Erik Vullings",
+    "email": "erik.vullings@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TNOCS/kvk-query/issues"
+  },
+  "homepage": "https://github.com/TNOCS/kvk-query#readme",
+  "dependencies": {
+    "command-line-args": "~5.1.1",
+    "command-line-usage": "~6.1.0",
+    "dotenv": "^8.2.0",
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.2",
+    "@types/command-line-args": "^5.0.0",
+    "rimraf": "3.0.2",
+    "typescript": "^3.8.3"
+  }
+}
