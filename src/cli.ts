@@ -122,7 +122,7 @@ if ((!options.src && !options.kvk) || !options.key) {
   console.log(usage);
   process.exit(1);
 }
-if (!options.output) {
+if (!options.output && !options.kvk) {
   const ext = path.extname(options.src);
   const outputFile = path.resolve(process.cwd(), options.src).replace(RegExp(`${ext}$`, 'i'), '_result');
   options.output = outputFile;
