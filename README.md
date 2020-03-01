@@ -4,7 +4,7 @@ Command line interface (CLI) to query the Netherlands Chamber of Commerce (KvK -
 
 ## Installation
 
-Assuming you have [node.js](https://nodejs.org/) installed, you can install it as a global command.
+Assuming you have [node.js](https://nodejs.org/) installed, you can install [kvk-query](https://www.npmjs.com/package/kvk-query) as a global command.
 
 ```bash
 npm i -g kvk-query

@@ -6,7 +6,7 @@
   "types": "./dist/cli.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TNOCS/kvk-query.git"
+    "url": "https://github.com/erikvullings/kvk-query.git"
   },
   "keywords": [
     "KVK",
@@ -31,9 +31,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TNOCS/kvk-query/issues"
+    "url": "https://github.com/erikvullings/kvk-query/issues"
   },
-  "homepage": "https://github.com/TNOCS/kvk-query#readme",
+  "homepage": "https://github.com/erikvullings/kvk-query#readme",
   "dependencies": {
     "command-line-args": "~5.1.1",
     "command-line-usage": "~6.1.0",

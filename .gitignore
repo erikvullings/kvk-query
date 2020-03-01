@@ -39,3 +39,5 @@ test
 .vscode
 dist
 .env
+sample/kvk_result.csv
+sample/kvk_result.json
