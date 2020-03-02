@@ -1,6 +1,7 @@
 import { ICommandOptions, IKvKProfile, IAddress } from './models';
 import * as path from 'path';
 import * as fs from 'fs';
+import { padLeft } from './utils';
 
 const decimalSeparator = (inputs: ICommandOptions) => (n?: number) =>
   n ? (inputs.decimalSeparator === ',' ? n.toString().replace(/[.]/, ',') : n) : undefined;
@@ -14,8 +15,8 @@ const json2csv = (inputs: ICommandOptions, items: IKvKProfile[], cb: (result: st
       return [
         ...acc,
         [
-          it.kvkNumber,
-          it.branchNumber,
+          padLeft(it.kvkNumber, '0', 8),
+          padLeft(it.branchNumber, '0', 12),
           it.rsin,
           it.tradeNames.businessName,
           it.tradeNames.shortBusinessName,
