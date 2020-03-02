@@ -1,10 +1,9 @@
 import axios, { AxiosPromise, AxiosResponse } from 'axios';
 import { ICommandOptions, IKvKProfileResult, IKvKProfile } from './models';
+import { padLeft } from './utils';
 
 // https://api.kvk.nl/api/v2/profile/companies?user_key=KVK_API_KEY&&kvkNumber=10030057
 
-export const padLeft = (str: string | number, ch = ' ', len = 2): string =>
-  str.toString().length >= len ? str.toString() : padLeft(ch + str.toString(), ch, len);
 
 /** Query the KvK and return a promise */
 const query = (user_key: string, kvk: number, startPage?: number) => {
