@@ -3,8 +3,12 @@ import { ICommandOptions, IKvKProfileResult, IKvKProfile } from './models';
 
 // https://api.kvk.nl/api/v2/profile/companies?user_key=KVK_API_KEY&&kvkNumber=10030057
 
+export const padLeft = (str: string | number, ch = ' ', len = 2): string =>
+  str.toString().length >= len ? str.toString() : padLeft(ch + str.toString(), ch, len);
+
 /** Query the KvK and return a promise */
-const query = (user_key: string, kvkNumber: number, startPage?: number) => {
+const query = (user_key: string, kvk: number, startPage?: number) => {
+  const kvkNumber = padLeft(kvk, '0', 8);
   return axios
     .get('https://api.kvk.nl/api/v2/profile/companies', {
       params: {
