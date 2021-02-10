@@ -1,6 +1,6 @@
 {
   "name": "kvk-query",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "CLI to query the Netherlands Chamber of Commerce (KvK - Kamer van Koophandel).",
   "main": "./dist/cli.js",
   "types": "./dist/cli.d.ts",
@@ -14,7 +14,7 @@
     "CSV"
   ],
   "bin": {
-    "kvk-query": "./bin/run.js"
+    "kvk-query": "bin/run.js"
   },
   "scripts": {
     "start": "tsc -w",
