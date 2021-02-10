@@ -1,24 +1,23 @@
 dependencies:
-  axios: 0.19.2
+  axios: 0.21.1
   command-line-args: 5.1.1
-  command-line-usage: 6.1.0
+  command-line-usage: 6.1.1
   dotenv: 8.2.0
-  json-2-csv: 3.6.1
 devDependencies:
   '@types/command-line-args': 5.0.0
-  '@types/node': 12.12.29
+  '@types/node': 14.14.25
   rimraf: 3.0.2
-  typescript: 3.8.3
-lockfileVersion: 5.1
+  typescript: 4.1.5
+lockfileVersion: 5.2
 packages:
   /@types/command-line-args/5.0.0:
     dev: true
     resolution:
       integrity: sha512-4eOPXyn5DmP64MCMF8ePDvdlvlzt2a+F8ZaVjqmh2yFCpGjc1kI3kGnCFYX9SCsGTjQcWIyVZ86IHCEyjy/MNg==
-  /@types/node/12.12.29:
+  /@types/node/14.14.25:
     dev: true
     resolution:
-      integrity: sha512-yo8Qz0ygADGFptISDj3pOC9wXfln/5pQaN/ysDIzOaAWXt73cNHmtEC8zSO2Y+kse/txmwIAJzkYZ5fooaS5DQ==
+      integrity: sha512-EPpXLOVqDvisVxtlbvzfyqSsFeQxltFbluZNRndIb8tr9KiBnYNLzrc1N3pyKUCww2RNrfHDViqDWWE1LCJQtQ==
   /ansi-styles/3.2.1:
     dependencies:
       color-convert: 1.9.3
@@ -39,12 +38,12 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-Z/JnaVEXv+A9xabHzN43FiiiWEE7gPCRXMrVmRm00tWbjZRul1iHm7ECzlyNq1p4a4ATXz+G9FJ3GqGOkOV3fg==
-  /axios/0.19.2:
+  /axios/0.21.1:
     dependencies:
-      follow-redirects: 1.5.10
+      follow-redirects: 1.13.2
     dev: false
     resolution:
-      integrity: sha512-fjgm5MvRHLhx+osE2xoekY70AhARk3a6hkN+3Io1jc00jtquGvxYlKlsFUhmUET0V5te6CcZI7lcv2Ym61mjHA==
+      integrity: sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
   /balanced-match/1.0.0:
     dev: true
     resolution:
@@ -87,45 +86,27 @@ packages:
       node: '>=4.0.0'
     resolution:
       integrity: sha512-hL/eG8lrll1Qy1ezvkant+trihbGnaKaeEjj6Scyr3DN+RC7iQ5Rz84IeLERfAWDGo0HBSNAakczwgCilDXnWg==
-  /command-line-usage/6.1.0:
+  /command-line-usage/6.1.1:
     dependencies:
       array-back: 4.0.1
       chalk: 2.4.2
-      table-layout: 1.0.0
+      table-layout: 1.0.1
       typical: 5.2.0
     dev: false
     engines:
       node: '>=8.0.0'
     resolution:
-      integrity: sha512-Ew1clU4pkUeo6AFVDFxCbnN7GIZfXl48HIOQeFQnkO3oOqvpI7wdqtLRwv9iOCZ/7A+z4csVZeiDdEcj8g6Wiw==
+      integrity: sha512-F59pEuAR9o1SF/bD0dQBDluhpT4jJQNWUHEuVBqpDmCUo6gPjCi+m9fCWnWZVR/oG6cMTUms4h+3NPl74wGXvA==
   /concat-map/0.0.1:
     dev: true
     resolution:
       integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
-  /debug/3.1.0:
-    dependencies:
-      ms: 2.0.0
-    dev: false
-    resolution:
-      integrity: sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
-  /deeks/2.2.4:
-    dev: false
-    engines:
-      node: '>= 8'
-    resolution:
-      integrity: sha512-T8HtfilZeYvVRmTx9J6Nk4e0ayb/RqHx/XBOJpUybQyedRRtVw0I21pezA+OjXoCnL5YkkjCAM2TFvSJt0NwWw==
   /deep-extend/0.6.0:
     dev: false
     engines:
       node: '>=4.0.0'
     resolution:
       integrity: sha512-LOHxIOaPYdHlJRtCQfDIVZtfw/ufM8+rVj649RIHzcm/vGwQRXFt6OPqIFWsm2XEMrNIEtWR64sY1LEKD2vAOA==
-  /doc-path/2.0.2:
-    dev: false
-    engines:
-      node: '>=6.0'
-    resolution:
-      integrity: sha512-7KAEFeGh+xlqATVLXywN6g2U6RF7CW1la80BdtRF3BaiP1rz3r1UCewUeOnwpJ9A44LX66u32dYaU9zIqC1/TQ==
   /dotenv/8.2.0:
     dev: false
     engines:
@@ -146,14 +127,17 @@ packages:
       node: '>=4.0.0'
     resolution:
       integrity: sha512-6Tb2myMioCAgv5kfvP5/PkZZ/ntTpVK39fHY7WkWBgvbeE+VHd/tZuZ4mrC+bxh4cfOZeYKVPaJIZtZXV7GNCQ==
-  /follow-redirects/1.5.10:
-    dependencies:
-      debug: 3.1.0
+  /follow-redirects/1.13.2:
     dev: false
     engines:
       node: '>=4.0'
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
     resolution:
-      integrity: sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ==
+      integrity: sha512-6mPTgLxYm3r6Bkkg0vNM0HTjfGrOEtsfbhagQvbxDEsEkpNhw582upBaoRZylzen6krEmxXJgt9Ju6HiI4O7BA==
   /fs.realpath/1.0.0:
     dev: true
     resolution:
@@ -186,15 +170,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
-  /json-2-csv/3.6.1:
-    dependencies:
-      deeks: 2.2.4
-      doc-path: 2.0.2
-    dev: false
-    engines:
-      node: '>= 8'
-    resolution:
-      integrity: sha512-aNMcZQFkNJltEzc/WclcKb0JStgKiFAaxS/mombLWf73jAZYUxiMKPFpfn8zyD2ukYrxOno2C884Y/WbCRQR8A==
   /lodash.camelcase/4.3.0:
     dev: false
     resolution:
@@ -205,10 +180,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
-  /ms/2.0.0:
-    dev: false
-    resolution:
-      integrity: sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=
   /once/1.4.0:
     dependencies:
       wrappy: 1.0.2
@@ -242,9 +213,9 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==
-  /table-layout/1.0.0:
+  /table-layout/1.0.1:
     dependencies:
-      array-back: 3.1.0
+      array-back: 4.0.1
       deep-extend: 0.6.0
       typical: 5.2.0
       wordwrapjs: 4.0.0
@@ -252,14 +223,14 @@ packages:
     engines:
       node: '>=8.0.0'
     resolution:
-      integrity: sha512-o8V8u943KXX9gLNK/Ss1n6Nn4YhpyY/RRnp3hKv/zTA+SXYiQnzJQlR8CZQf1RqYqgkiWMJ54Mv+Vq9Kfzxz1A==
-  /typescript/3.8.3:
+      integrity: sha512-dEquqYNJiGwY7iPfZ3wbXDI944iqanTSchrACLL2nOB+1r+h1Nzu2eH+DuPPvWvm5Ry7iAPeFlgEtP5bIp5U7Q==
+  /typescript/4.1.5:
     dev: true
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-MYlEfn5VrLNsgudQTVJeNaQFUAI7DkhnOjdpAp4T+ku1TfQClewlbSuTVHiA+8skNBgaf02TL/kLOvig4y3G8w==
+      integrity: sha512-6OSu9PTIzmn9TCDiovULTnET6BgXtDYL4Gg4szY+cGsc3JP1dQL8qvE8kShTRx1NIw4Q9IBHlwODjkjWEtMUyA==
   /typical/4.0.0:
     dev: false
     engines:
@@ -287,11 +258,10 @@ packages:
       integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 specifiers:
   '@types/command-line-args': ^5.0.0
-  '@types/node': ^12.12.2
-  axios: ^0.19.2
+  '@types/node': ^14.14.25
+  axios: ^0.21.1
   command-line-args: ~5.1.1
-  command-line-usage: ~6.1.0
+  command-line-usage: ~6.1.1
   dotenv: ^8.2.0
-  json-2-csv: ^3.6.1
   rimraf: 3.0.2
-  typescript: ^3.8.3
+  typescript: ^4.1.5
