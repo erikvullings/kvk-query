@@ -19,11 +19,11 @@
   "scripts": {
     "start": "tsc -w",
     "clean": "rimraf ./dist",
-    "build": "npm run clean && tsc",
+    "build": "npm run clean && tsc -b",
     "dry-run": "npm publish --dry-run",
-    "patch-release": "npm version patch && npm publish && git push --follow-tags",
-    "minor-release": "npm version minor && npm publish && git push --follow-tags",
-    "major-release": "npm version major && npm publish && git push --follow-tags"
+    "patch-release": "npm run build && npm version patch && npm publish && git push --follow-tags",
+    "minor-release": "npm run build && npm version minor && npm publish && git push --follow-tags",
+    "major-release": "npm run build && npm version major && npm publish && git push --follow-tags"
   },
   "author": {
     "name": "Erik Vullings",
